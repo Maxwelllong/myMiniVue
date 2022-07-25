@@ -7,7 +7,16 @@
 <body>
 <script src="vue.js"></script>
 <script>
-    console.log(Vue)
+    const vm = new Vue({
+            data(){
+                return {
+                    name:'张三',
+                    age:20
+                }
+            }
+        }
+    )
+    console.log(vm._data.name)
 </script>
 </body>
 </html>
