@@ -3,13 +3,10 @@ import { observe } from "./src/observe/index";
 
 export function initState(vm){
     const opts = vm.$options
-    console.log('执行initState')
-    console.log('opts',opts)
     if(opts.data){
         console.log('执行opts.data')
         initData(vm)
     }
-    console.log('执行完initState')
 }
 
 
